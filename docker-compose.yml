@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  duma-bets:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: duma-bets-app
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - FSAPI_KEY=${FSAPI_KEY:-}
+      - FOOTBALL_API_KEY=${FOOTBALL_API_KEY:-}
+      - ODDS_API_KEY=${ODDS_API_KEY:-}
+      - SPORTS_API_KEY=${SPORTS_API_KEY:-}
+    volumes:
+      - ./data:/app/data

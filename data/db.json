@@ -1,0 +1,286 @@
+{
+  "users": [
+    {
+      "id": "usr-admin-1",
+      "name": "Administrador Master",
+      "username": "admin",
+      "email": "admin@dumabets.com",
+      "password": "admin123",
+      "role": "admin",
+      "status": "active",
+      "phone": "+55 11 99999-1111",
+      "balance": 10000,
+      "createdAt": "2026-08-31T21:22:32.268Z",
+      "lastLoginAt": "2026-09-30T21:22:32.268Z"
+    },
+    {
+      "id": "usr-agent-1",
+      "name": "Carlos Cambista",
+      "username": "cambista",
+      "email": "cambista@dumabets.com",
+      "password": "cambista123",
+      "role": "agent",
+      "status": "active",
+      "phone": "+55 11 98888-2222",
+      "balance": 440,
+      "agentCode": "CARLOS10",
+      "commissionRate": 12,
+      "createdAt": "2026-09-15T21:22:32.268Z",
+      "lastLoginAt": "2026-09-30T21:41:24.912Z"
+    },
+    {
+      "id": "usr-agent-2",
+      "name": "Rafael Apostas",
+      "username": "rafael",
+      "email": "rafael@dumabets.com",
+      "password": "cambista123",
+      "role": "agent",
+      "status": "active",
+      "phone": "+55 21 97777-3333",
+      "balance": 280,
+      "agentCode": "RAFAEL15",
+      "commissionRate": 15,
+      "createdAt": "2026-09-20T21:22:32.268Z",
+      "lastLoginAt": "2026-09-30T21:22:32.268Z"
+    },
+    {
+      "id": "usr-player-1",
+      "name": "Lucas Silva",
+      "username": "jogador",
+      "email": "jogador@dumabets.com",
+      "password": "jogador123",
+      "role": "player",
+      "status": "active",
+      "phone": "+55 11 96666-4444",
+      "balance": 225,
+      "referredByAgentCode": "CARLOS10",
+      "createdAt": "2026-09-25T21:22:32.268Z",
+      "lastLoginAt": "2026-09-30T21:22:32.268Z"
+    },
+    {
+      "id": "usr-player-2",
+      "name": "Mariana Costa",
+      "username": "mariana",
+      "email": "mariana@dumabets.com",
+      "password": "jogador123",
+      "role": "player",
+      "status": "active",
+      "phone": "+55 11 95555-5555",
+      "balance": 80,
+      "referredByAgentCode": "CARLOS10",
+      "createdAt": "2026-09-27T21:22:32.268Z",
+      "lastLoginAt": "2026-09-30T21:22:32.268Z"
+    },
+    {
+      "id": "usr-player-3",
+      "name": "Felipe Santos",
+      "username": "felipe",
+      "email": "felipe@dumabets.com",
+      "password": "jogador123",
+      "role": "player",
+      "status": "active",
+      "phone": "+55 11 94444-6666",
+      "balance": 15,
+      "referredByAgentCode": "RAFAEL15",
+      "createdAt": "2026-09-28T21:22:32.268Z",
+      "lastLoginAt": "2026-09-30T21:22:32.268Z"
+    }
+  ],
+  "matches": [],
+  "tickets": [],
+  "commissions": [],
+  "transactions": [
+    {
+      "id": "tx-bet-1790804487708",
+      "userId": "usr-agent-1",
+      "userName": "Carlos Cambista",
+      "type": "bet_placed",
+      "amount": -10,
+      "status": "completed",
+      "description": "Aposta no Bilhete DM-23881",
+      "createdAt": "2026-09-30T21:41:27.708Z",
+      "completedAt": "2026-09-30T21:41:27.708Z"
+    },
+    {
+      "id": "tx-dep-1790803422786",
+      "userId": "usr-player-1",
+      "userName": "Lucas Silva",
+      "type": "deposit",
+      "amount": 50,
+      "status": "pending",
+      "description": "Depósito PIX de R$ 50.00",
+      "pixKey": "financeiro@dumabets.com",
+      "pixCode": "00020126580014br.gov.bcb.pix0136financeiro@dumabets.com52040000530398654050.005802BR5909DUMA BETS6009SAO PAULO62070503***6304",
+      "createdAt": "2026-09-30T21:23:42.849Z"
+    },
+    {
+      "id": "tx-bet-1790803413789",
+      "userId": "usr-player-1",
+      "userName": "Lucas Silva",
+      "type": "bet_placed",
+      "amount": -25,
+      "status": "completed",
+      "description": "Aposta no Bilhete DM-81910",
+      "createdAt": "2026-09-30T21:23:33.789Z",
+      "completedAt": "2026-09-30T21:23:33.789Z"
+    },
+    {
+      "id": "tx-1",
+      "userId": "usr-player-1",
+      "userName": "Lucas Silva",
+      "type": "deposit",
+      "amount": 200,
+      "status": "completed",
+      "description": "Depósito via PIX",
+      "pixKey": "lucas.silva@email.com",
+      "createdAt": "2026-09-26T21:22:32.268Z",
+      "completedAt": "2026-09-26T21:22:32.268Z"
+    },
+    {
+      "id": "tx-2",
+      "userId": "usr-player-1",
+      "userName": "Lucas Silva",
+      "type": "bet_won",
+      "amount": 78,
+      "status": "completed",
+      "description": "Premiação do Bilhete DM-59104",
+      "createdAt": "2026-09-29T21:22:32.268Z",
+      "completedAt": "2026-09-29T21:22:32.268Z"
+    },
+    {
+      "id": "tx-3",
+      "userId": "usr-player-2",
+      "userName": "Mariana Costa",
+      "type": "deposit",
+      "amount": 100,
+      "status": "completed",
+      "description": "Depósito via PIX",
+      "createdAt": "2026-09-30T15:22:32.268Z",
+      "completedAt": "2026-09-30T15:22:32.268Z"
+    }
+  ],
+  "settings": {
+    "platformName": "DUMA BETS",
+    "defaultCommissionRate": 10,
+    "minBet": 2,
+    "maxBet": 5000,
+    "maxReturn": 50000,
+    "platformStatus": "active",
+    "contactPhone": "+55 11 98765-4321",
+    "termsText": "Apostas esportivas proibidas para menores de 18 anos. Jogue com responsabilidade conforme as diretrizes regulatórias vigentes no Brasil."
+  },
+  "apiProviders": [
+    {
+      "id": "the-odds-api",
+      "name": "The Odds API",
+      "type": "Odds Pré-Jogo & Casas de Apostas",
+      "website": "https://the-odds-api.com",
+      "envVar": "ODDS_API_KEY",
+      "description": "Fornece cotações ao vivo e pré-jogo de dezenas de casas esportivas para futebol nacional e internacional.",
+      "freeTier": "500 requisições gratuitas por mês (Sem necessidade de cartão)",
+      "configured": false,
+      "status": "unconfigured",
+      "requestCount": 0,
+      "limitInfo": "500 req/mês no plano Free"
+    },
+    {
+      "id": "football-data",
+      "name": "Football-Data.org",
+      "type": "Partidas, Campeonatos & Resultados",
+      "website": "https://football-data.org",
+      "envVar": "FOOTBALL_API_KEY",
+      "description": "API europeia de partidas, classificações e placares atualizados para as maiores ligas mundiais.",
+      "freeTier": "10 requisições por minuto com cobertura de 12 principais competições",
+      "configured": false,
+      "status": "unconfigured",
+      "requestCount": 0,
+      "limitInfo": "10 req/min no plano Free"
+    },
+    {
+      "id": "api-football",
+      "name": "API-Football (API-Sports)",
+      "type": "Cobertura Global de Partidas & Estatísticas",
+      "website": "https://www.api-football.com",
+      "envVar": "SPORTS_API_KEY",
+      "description": "Cobertura extensiva do futebol sul-americano e mundial, incluindo Série A e B do Brasileirão.",
+      "freeTier": "100 requisições gratuitas diárias",
+      "configured": false,
+      "status": "unconfigured",
+      "requestCount": 0,
+      "limitInfo": "100 req/dia no plano Free"
+    }
+  ],
+  "apiSyncLogs": [],
+  "auditLogs": [
+    {
+      "id": "log-1790804487709-nley6",
+      "userId": "usr-agent-1",
+      "userName": "Carlos Cambista",
+      "action": "APOSTA_CRIADA",
+      "details": "Bilhete DM-23881 registrado no valor de R$ 10.00",
+      "timestamp": "2026-09-30T21:41:27.709Z"
+    },
+    {
+      "id": "log-1790804484913-18hbp",
+      "userId": "usr-agent-1",
+      "userName": "Carlos Cambista",
+      "action": "LOGIN",
+      "details": "Login realizado com sucesso por cambista (agent)",
+      "timestamp": "2026-09-30T21:41:24.913Z"
+    },
+    {
+      "id": "log-1790803962669-e5aba",
+      "userId": "usr-agent-1",
+      "userName": "Carlos Cambista",
+      "action": "LOGIN",
+      "details": "Login realizado com sucesso por cambista (agent)",
+      "timestamp": "2026-09-30T21:32:42.669Z"
+    },
+    {
+      "id": "log-1790803641030-b9q60",
+      "userName": "Sistema",
+      "action": "LIMPEZA_CACHE",
+      "details": "1 itens removidos do cache pelo administrador.",
+      "timestamp": "2026-09-30T21:27:21.030Z"
+    },
+    {
+      "id": "log-1790803413789-3wcs4",
+      "userId": "usr-player-1",
+      "userName": "Lucas Silva",
+      "action": "APOSTA_CRIADA",
+      "details": "Bilhete DM-81910 registrado no valor de R$ 25.00",
+      "timestamp": "2026-09-30T21:23:33.789Z"
+    },
+    {
+      "id": "log-1790803407397-rv7eh",
+      "userName": "Sistema",
+      "action": "IMPORTAR_JOGOS",
+      "details": "2 partidas importadas e publicadas no catálogo.",
+      "timestamp": "2026-09-30T21:23:27.397Z"
+    },
+    {
+      "id": "log-1",
+      "userId": "usr-admin-1",
+      "userName": "Administrador Master",
+      "action": "INICIALIZACAO_SISTEMA",
+      "details": "Banco de dados DUMA BETS inicializado com sucesso e regras de comissão ativas.",
+      "timestamp": "2026-09-29T21:22:32.268Z"
+    },
+    {
+      "id": "log-2",
+      "userId": "usr-admin-1",
+      "userName": "Administrador Master",
+      "action": "CONFIGURACAO_COMISSAO",
+      "details": "Comissão padrão definida em 10% e cambista CARLOS10 configurado para 12%.",
+      "timestamp": "2026-09-30T01:22:32.268Z"
+    },
+    {
+      "id": "log-3",
+      "userId": "usr-agent-1",
+      "userName": "Carlos Cambista",
+      "action": "LOGIN",
+      "details": "Login efetuado com sucesso no painel do cambista.",
+      "timestamp": "2026-09-30T19:22:32.268Z"
+    }
+  ]
+}

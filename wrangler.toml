@@ -1,0 +1,32 @@
+# ====================================================================
+# DUMA BETS - Configuração Cloudflare Workers & D1 (100% Free Tier)
+# ====================================================================
+name = "duma-bets"
+main = "src/worker/index.ts"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+
+# Servir Frontend React SPA estático a partir do build da pasta dist/
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+not_found_handling = "single-page-application"
+
+# Banco de dados Relacional Serverless Cloudflare D1 (Gratuito)
+# Execute: npx wrangler d1 create duma-bets-db para obter o database_id
+[[d1_databases]]
+binding = "DB"
+database_name = "duma-bets-db"
+database_id = "COLOQUE_SEU_DATABASE_ID_AQUI"
+migrations_dir = "./migrations"
+
+# Variáveis públicas de ambiente
+[vars]
+NODE_ENV = "production"
+
+# SECRETS (Não coloque chaves de API neste arquivo!)
+# Configure via comando:
+# npx wrangler secret put ODDS_API_KEY
+# npx wrangler secret put FOOTBALL_API_KEY
+# npx wrangler secret put FSAPI_KEY
+# npx wrangler secret put SPORTS_API_KEY

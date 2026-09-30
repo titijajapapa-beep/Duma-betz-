@@ -1,0 +1,8 @@
+{
+  "name": "DUMA BETS - Gestão e Apostas Esportivas",
+  "description": "Plataforma completa de apostas esportivas e gerenciamento de bancas, cambistas, bilhetes e integração de odds.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
